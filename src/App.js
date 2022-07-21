@@ -37,7 +37,7 @@ function App() {
       {
         //Conditional Rendering (based on ternary in this case based whether a selected fighter is present)
         selectedFighter ?
-        <FighterScreen />
+        <FighterScreen selectedFighter={selectedFighter}/>
         : null
       }
     </div>
