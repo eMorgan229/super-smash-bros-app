@@ -1,8 +1,8 @@
 
-const Fighter = ({fighter}) => {
+const Fighter = ({fighter, setSelectedFighter}) => {
     return (
         //backgroundCOlor is inside curlies because style has to be returned as an object in jsx
-        <div style={{backgroundColor: fighter.color}}>
+        <div style={{backgroundColor: fighter.color}} onClick={() => {setSelectedFighter(fighter.name)}}>
         <img className="fighter-image" src={`https://www.smashbros.com/assets_v2/img/fighter/thumb_a/${fighter.name.toLowerCase()}.png`} />
         <span>
           <h5 className="fighter-name">{fighter.name}</h5>
