@@ -39,3 +39,22 @@ cursor: pointer;
   width: 100%;
   height: auto;
 }
+
+#fighter-screen {
+  /*vh is viewport height, position-fixed: removes it from the , z access is the axes towards and away from you : so you can LAYER stuff: which is why the fighter screen in on top of the fighters (turn the opacity to .05 to check that it's still behind)*/
+position: fixed;
+height: 100vh;
+width: 100%;
+/* opacity: 0.5; */
+top: 0;
+left: 0;
+background-color: lightgreen;
+z-index: 1;
+}
+
+.char-model {
+
+}
+.char-name {
+  
+}
